@@ -6,7 +6,7 @@ import NotFound from './Pages/NotFound';
 import SignUp from './Pages/Signup';
 import Login from './Pages/Login';
 import CourseList from './Pages/Course/CourseList';
-import Contact from './Pages/Contact';
+import Contact from './Pages/Contact';     
 import Denied from './Pages/Denied';
 import CourseDescription from './Pages/Course/CourseDescription';
 import RequireAuth from './Components/Auth/RequireAuth';

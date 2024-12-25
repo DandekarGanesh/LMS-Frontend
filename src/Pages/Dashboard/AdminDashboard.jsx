@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { deleteCourse, getAllCourses } from '../../Redux/Slices/CourseSlice';
 import { getStatsData } from '../../Redux/Slices/StatSlice';
-import { getPaymentRecord } from '../../Redux/Slices/razorpaySlice';
+import { getPaymentRecord } from '../../Redux/Slices/RazorpaySlice';
 import { Bar, Pie } from 'react-chartjs-2';
 import { FaUsers } from 'react-icons/fa';
 import { FcSalesPerformance } from 'react-icons/fc';
