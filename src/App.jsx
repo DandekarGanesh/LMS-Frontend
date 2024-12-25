@@ -3,7 +3,7 @@ import './App.css';
 import HomePage from './Pages/HomePage';
 import AboutUs from './Pages/AboutUs';
 import NotFound from './Pages/NotFound';
-import SignUp from './Pages/SignUp';
+import SignUp from './Pages/Signup';
 import Login from './Pages/Login';
 import CourseList from './Pages/Course/CourseList';
 import Contact from './Pages/Contact';
