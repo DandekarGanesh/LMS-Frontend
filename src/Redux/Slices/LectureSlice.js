@@ -10,6 +10,8 @@ const initialState = {
 export const getCourseLectures = createAsyncThunk("/course/lecture/get", async (courseId) => {
     try {
         const response = axiosInstance.get(`/courses/${courseId}`);
+        // console.log("Lectures");
+        // console.log(response);
         toast.promise(response, {
             loading: "fetching course lectures",
             success: "lectures fetched successfully",
@@ -48,7 +50,7 @@ export const addCourseLecture = createAsyncThunk("/course/lecture/add", async (d
 
 export const deleteCourseLecture = createAsyncThunk("/course/lecture/delete", async (data) => {
     try {
-        const response = axiosInstance.delete(`/courses?courseId=${data.courseId}&lectureId=${data.lectureId}`);
+        const response = axiosInstance.delete(`/courses/${data.courseId}/${data.lectureId}`);
 
         toast.promise(response, {
             loading: "deleting course lectures",

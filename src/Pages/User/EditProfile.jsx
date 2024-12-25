@@ -24,7 +24,6 @@ function EditProfile() {
     function handleImageUpload(e) {
        e.preventDefault();
        const uploadedImage = e.target.files[0];
-      //  console.log(e.target);
 
        if(uploadedImage) {
           const fileReader = new FileReader();

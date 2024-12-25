@@ -61,6 +61,11 @@ function Login() {
 
 
 
+    // function handleForgotPassword() {
+    //     console.log("forgot password clicked");
+    // }
+
+
 
   return (
     <HomeLayout>
@@ -103,6 +108,10 @@ function Login() {
 
                 <p className='text-center'>
                    dont have an account ? <Link className="link text-accent cursor-pointer" to="/signup"> Signup </Link>
+                </p>
+                
+                <p className='text-center'>
+                   Forgot Password ? <Link to="/ForgotPassword" className="link text-accent cursor-pointer"> Forogot Password </Link>
                 </p>
                  
             </form>

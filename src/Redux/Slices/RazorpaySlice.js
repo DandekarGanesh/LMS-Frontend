@@ -116,9 +116,10 @@ const razorpaySlice = createSlice({
             state.isPaymentVerified = action?.payload?.success;
         })
         .addCase(getPaymentRecord.fulfilled, (state, action) => {
-            state.allPayments = action?.payload?.allPayments;
+            console.log("Slice_action  :",action);
+            state.allPayments = action?.payload?.subscriptions?.items;
             state.finalMonths = action?.payload?.finalMonths;
-            state.monthlySalesRecord = action?.payload?.monthlySalesRecord;
+            state.monthlySalesRecord = (action?.payload?.monthlySalesRecord || 0 );
         })
         
     }
