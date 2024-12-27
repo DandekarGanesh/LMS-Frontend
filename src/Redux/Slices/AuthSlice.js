@@ -5,10 +5,14 @@ import axiosInstance from '../../Helpers/axiosInstance';
 let localData = undefined;
 
 try {
+    // console.log("LocalStorage ",localStorage);
+    // console.log(localStorage?.getItem('data'));
     localData = localStorage?.getItem('data') !== undefined ? JSON?.parse(localStorage?.getItem('data') || {} ) : {};
 } catch(err) {
     console.log("-->> ",err);
 }
+
+
 
 const initialState = {
     isLoggedIn: localStorage?.getItem('isLoggedIn') || false,
